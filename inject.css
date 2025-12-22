@@ -1,0 +1,21 @@
+.bloomberg-muter-toast {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00ffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 9999;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  pointer-events: none;
+  border: 1px solid #00ffff;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.bloomberg-muter-toast.visible {
+  opacity: 1;
+}

@@ -1,0 +1,58 @@
+{
+    "manifest_version": 3,
+    "name": "Bloomberg Muter",
+    "version": "3.0.0",
+    "description": "Automatically mutes Bloomberg Live during music/break segments using OCR.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "offscreen"
+    ],
+    "host_permissions": [
+        "*://www.youtube.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "inject.css"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "tesseract.min.js",
+                "worker.min.js",
+                "tesseract-core.wasm.js",
+                "tesseract-core.wasm",
+                "eng.traineddata.gz"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; object-src 'self'"
+    }
+}

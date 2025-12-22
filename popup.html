@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      padding: 0;
+      margin: 0;
+      background-color: #000000;
+      color: #ff8000;
+      font-family: 'Courier New', Courier, monospace;
+      border: 2px solid #ff8000;
+      overflow: hidden;
+    }
+
+    .terminal-header {
+      background: #ff8000;
+      color: #000000;
+      padding: 8px 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .terminal-content {
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .status-line {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+    }
+
+    .instruction {
+      color: #ffffff;
+      font-size: 13px;
+      margin-top: 15px;
+      border-top: 1px solid #333;
+      padding-top: 15px;
+    }
+
+    .bloomberg-link {
+      display: block;
+      margin-top: 15px;
+      padding: 10px;
+      background: #111;
+      border: 1px solid #ff8000;
+      color: #ff8000;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: all 0.2s;
+    }
+
+    .bloomberg-link:hover {
+      background: #ff8000;
+      color: #000;
+    }
+
+    .footer {
+      font-size: 10px;
+      color: #666;
+      margin-top: 20px;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="terminal-header">
+    <span>Bloomberg Muter</span>
+    <span>v1.2.0</span>
+  </div>
+
+  <div class="terminal-content">
+    <div class="status-line">
+      <span>> ACTIVE</span>
+    </div>
+
+    <div class="instruction">
+      SYSTEM WILL AUTOMATICALLY SILENCE AUDIO DURING DETECTED BREAK SEGMENTS.
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=iEpJwprxDdk" target="_blank" class="bloomberg-link">
+      GO TO BLOOMBERG LIVE
+    </a>
+
+    <div class="footer">
+      TERMINAL ACCESS GRANTED
+    </div>
+  </div>
+</body>
+
+</html>

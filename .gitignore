@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+icons/
+icon_final_*.png
+icon_v3_*.png
+icon_v4.png
+icon_new.png
+package-lock.json
