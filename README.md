@@ -1,5 +1,7 @@
 # Bloomberg Muter
 
+![Muted Screen](assets/screenshot.png)
+
 A specialized Chrome extension designed to enhance the viewing experience of the Bloomberg Live YouTube broadcast.
 
 ## Features
